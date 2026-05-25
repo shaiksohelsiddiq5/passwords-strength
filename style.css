@@ -1,54 +1,65 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-
+body{
     display: flex;
-    justify-content: center;   /* horizontal center */
-    align-items: center;       /* vertical center */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
-.group {
-    text-align: center;
-    background: white;
+#top{
+    color: green;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.group input {
+.group label{
+    font-size: 18px;
+    color: #333;
+}
+
+.group input{
+    padding: 10px;
     width: 300px;
-    height: 35px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    padding-left: 10px;
 }
 
-button {
+button{
     padding: 10px 20px;
-    background: blue;
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.group .power-container {
+button:hover{
+    background-color: darkblue;
+}
+
+.group .power-container{
     width: 300px;
     height: 10px;
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    margin: 15px auto;
 }
 
-.group .power-container #power-point {
+.group .power-container #power-point{
     height: 100%;
-    width: 0;
+    width: 0%;
     background-color: red;
     transition: width 0.3s ease;
 }
