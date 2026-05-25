@@ -1,9 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    height: 100vh;
+}
+
+.group {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 .group input {
     width: 300px;
     height: 35px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    padding-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .group .power-container {
@@ -12,7 +43,7 @@
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    margin-top: 10px;
+    margin: 15px auto;
 }
 
 .group .power-container #power-point {
@@ -20,14 +51,4 @@
     width: 0;
     background-color: red;
     transition: width 0.3s ease;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
